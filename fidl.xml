@@ -4,7 +4,7 @@
 <!-- Thanks to berno777 for adding missing keywords and comment styles! -->
 <!-- This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. 
 	 If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
-<language name="Franca interface file" version="1.00" kateversion="2.4" section="Sources" extensions="*.fidl">
+<language name="Franca interface file" version="1.00" kateversion="2.4" section="Sources" extensions="*.fidl;*.fdepl">
 	<highlighting>
 		<list name="metadata_keywords"> 
 			<item>package</item>
@@ -16,6 +16,9 @@
 			<item>import</item>
 			<item>model</item>
 			<item>from</item>
+			<item>instance</item>
+			<item>for</item>
+			<item>provider</item>
 		</list>	
 		<list name="primitive_types">
 			<item>UInt8</item>
@@ -50,6 +53,7 @@
 			<item>signal</item>
 			<item>initial</item>
 			<item>typedef</item>
+			<item>define</item>
 		</list>
 		<list name="decorators">
 			<item>const</item>
@@ -100,7 +104,7 @@
 				<keyword attribute="CommentMetadata" context="#stay" String="comment_metadata" /> 
 				<StringDetect attribute="Comment" context="#pop" String="**&gt;" endRegion="comment" />
 				<StringDetect attribute="Comment" context="#pop" String="*/" endRegion="comment" />
-		    	</context>
+			</context>
 
 		</contexts> 
 		<itemDatas> 
